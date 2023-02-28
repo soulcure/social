@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="298px" height="76px" viewBox="0 0 298 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 8</title>
+    <g id="登录/新手引导" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="完成全部任务关闭弹窗卡片" transform="translate(-348.000000, -270.000000)" fill="#198CFE">
+            <g id="服务器头部背景" transform="translate(128.000000, 88.000000)">
+                <g id="编组-8" transform="translate(369.000000, 220.033483) scale(1, -1) translate(-369.000000, -220.033483) translate(220.000000, 182.413393)">
+                    <path d="M298,72.2401794 C298,73.8970336 296.656854,75.2401794 295,75.2401794 C294.154765,75.2401794 293.348746,74.8836209 292.78018,74.2581978 L283.454,64 L12,64 C5.372583,64 8.11624501e-16,58.627417 0,52 L0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 L286,0 C292.627417,-1.21743675e-15 298,5.372583 298,12 L298,72.2401794 Z" id="形状结合"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

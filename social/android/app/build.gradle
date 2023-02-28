@@ -1,0 +1,207 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+//用于判断是否是release编译
+boolean isReleaseBuildType() {
+    for (String s : gradle.startParameter.taskNames) {
+        if (s.contains("Release") | s.contains("release")) {
+            return true
+        }
+    }
+    return false
+}
+
+//默认编译32位包，如编译参数指定--dart-define=ABI=arm64，则编译64位包，参数仅Release编译生效
+def abi = 'arm32'
+def flutterTargetPlatform = 'android-arm'
+def androidAbiFilters = 'armeabi-v7a'
+
+if (isReleaseBuildType() && project.hasProperty('dart-defines')) {
+    def dartDefines = project.property('dart-defines')
+    //flutter 2.2.0以下
+//    def pair = URLDecoder.decode(dartDefines).split('=')
+    //flutter 2.2.0及以上
+    def pair = new String(dartDefines.decodeBase64(), 'UTF-8').split('=')
+    if (pair.first() == "ABI" && pair.last() == "arm64") {
+        flutterTargetPlatform = 'android-arm64'
+        androidAbiFilters = 'arm64-v8a'
+        abi = 'arm64'
+    }
+}
+
+if (isReleaseBuildType()) {
+    //当Release编译时，执行flutter run命令，必须执行这行代码，以确保armeabi-v7a中的libflutter.so可以正确拷贝
+    //此行代码必须提前设置，放到buildTypes中执行是无效的
+    project.setProperty('target-platform', flutterTargetPlatform)
+    println(">>>>>>Release " + abi)
+} else {
+    println(">>>>>>Debug")
+    project.setProperty('target-platform', flutterTargetPlatform)
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+//apply plugin: 'com.loveota.lbsdk'
+//apply from: project(':lebian').file('lebian_app.gradle')
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('../buff.jks')
+            storePassword '123456'
+            keyAlias 'buffkey'
+            keyPassword '123456'
+        }
+
+        release {
+            storeFile file('../buff.jks')
+            storePassword '123456'
+            keyAlias 'buffkey'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 31
+
+    lintOptions {
+        disable 'InvalidPackage'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.idreamsky.buff"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        manifestPlaceholders = [
+                OPENINSTALL_APPKEY: "rmst4o",
+                JPUSH_PKGNAME     : "com.idreamsky.buff",
+                JPUSH_APPKEY      : "df59cd0f418a857fe19363a1", // NOTE: JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL     : "developer-default", //暂时填写默认值即可.
+                XIAOMI_APPKEY     : "MI-5971867423490",//小米平台注册的appkey
+                XIAOMI_APPID      : "MI-2882303761518674490",//小米平台注册的appid
+                MEIZU_APPKEY      : "MZ-329f1f3b7ff74895a9f0340924f96546", // 魅族平台注册的appkey
+                MEIZU_APPID       : "MZ-134910", // 魅族平台注册的appid
+                OPPO_APPKEY       : "OP-659ca78627364bddab65e2e2e26d1ac8",
+                OPPO_APPID        : "OP-30361699",
+                OPPO_APPSECRET    : "OP-8598acb1628748a9a668628e6ee4da24",
+                VIVO_APPKEY       : "70983508f39e8dfaa5071f73353bf625",
+                VIVO_APPID        : "104546028",
+        ]
+
+    }
+
+    // Specifies one flavor dimension.
+    flavorDimensions "OP0S0N00666"
+    productFlavors {
+        android {}
+        OP0S0N00666 {}
+        BG0S0N00666 {}
+        HW0S0N00666 {}
+        MZ0S0N00666 {}
+        XM0S0N00662 {}
+        TX0S0N70666 {}
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+    //此处区分release和debug包的cpu架构
+    //flutter run与flutter build命令均可正常构建release和debug包，模拟器和真机运行正常
+    buildTypes {
+        debug {
+            ndk {
+                //flutter run命令会自动检测当前设备的cpu架构，并仅将对应架构的libflutter.so库拷贝到对应的目录
+                //flutter build命令会将此处配置的对应架构的so库拷贝到对应的目录
+
+                //由于flutter的armeabi-v7a架构的debug so在模拟器上崩溃(release so没问题)
+                //因此debug包必须要包含x86架构，以确保通过flutter run构建的debug包在模拟器上可正常运行
+                //abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                abiFilters 'armeabi-v7a'
+            }
+        }
+
+        release {
+            minifyEnabled false //删除无用代码
+            shrinkResources false //删除无用资源
+
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            ndk {
+                //flutter的armeabi-v7a架构的release so在模拟器和真机上均可正常运行
+                //release包体为减少包体大小，仅设置armeabi-v7a架构
+                abiFilters androidAbiFilters
+            }
+        }
+    }
+
+    repositories {
+        flatDir { dirs 'libs' }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'cn.jiguang.sdk.plugin:huawei:4.6.4'
+    implementation 'cn.jiguang.sdk.plugin:xiaomi:4.6.4'
+    implementation 'cn.jiguang.sdk.plugin:meizu:4.6.4'
+    implementation 'cn.jiguang.sdk.plugin:oppo:4.6.4'
+    implementation 'cn.jiguang.sdk.plugin:vivo:4.6.4'
+    implementation 'com.huawei.hms:push:6.3.0.304'
+    implementation(name: 'paytypelibrary2.0.1', ext: 'aar')
+    // implementation project(path: ':lebian')
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    // 悬浮窗
+//    implementation 'com.github.princekin-f:EasyFloat:2.0.3'
+    implementation project(path: ':easyfloat')
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation(name: 'alipaysdk-15.8.05.211018174351', ext: 'aar')
+    // oppo 厂商 aar 需要单独引入，请将 jpush-android-xxx-release/third-push/oppo/libs 下 com.heytap.msp-push-x.x.x.aar 单独拷贝一份到应用 module/libs 下
+    implementation(name: 'com.heytap.msp-push-3.0.0', ext: 'aar')
+    //以下为 OPPO 3.0.0 aar需要依赖
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'commons-codec:commons-codec:1.6'
+    implementation 'androidx.annotation:annotation:1.1.0'
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-v4:24.0.0'
+}

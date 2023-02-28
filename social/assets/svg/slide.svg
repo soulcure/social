@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ppt-icon</title>
+    <defs>
+        <linearGradient x1="99.7777778%" y1="50.2173913%" x2="82.7777778%" y2="50.2173913%"
+            id="linearGradient-1">
+            <stop stop-color="#EB4825" offset="0%"></stop>
+            <stop stop-color="#EB3319" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="65.7787936%" y1="3.66666667%" x2="30.7293432%" y2="112.666667%"
+            id="linearGradient-2">
+            <stop stop-color="#FF8246" offset="0%"></stop>
+            <stop stop-color="#FF5E2F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="文件收发/服务器文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ppt-icon">
+            <rect id="bg" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="48"
+                height="48"></rect>
+            <g id="编组-5" transform="translate(5.000000, 4.000000)">
+                <path
+                    d="M9.82655583,9.7787234 L35.4387778,9.7787234 C36.8533018,9.7787234 38,10.9218262 38,12.3319149 L38,36.587234 C38,37.9973228 36.8533018,39.1404255 35.4387778,39.1404255 L9.82655583,39.1404255 C8.41203187,39.1404255 7.26533363,37.9973228 7.26533363,36.587234 L7.26533363,12.3319149 C7.26533363,10.9218262 8.41203187,9.7787234 9.82655583,9.7787234 Z"
+                    id="蒙版备份" fill="url(#linearGradient-1)"></path>
+                <g id="蒙版">
+                    <path
+                        d="M30.3163334,0.842553191 C31.7308574,0.842553191 32.8775556,1.98565596 32.8775556,3.39574468 L32.8775556,36.587234 L32.8775556,36.587234 C32.8775556,37.9973228 34.0242538,39.1404255 35.4387778,39.1404255 L3.42350034,39.1404255 C2.00897638,39.1404255 0.86227814,37.9973228 0.86227814,36.587234 L0.86227814,3.39574468 C0.86227814,1.98565596 2.00897638,0.842553191 3.42350034,0.842553191 L30.3163334,0.842553191 Z"
+                        id="path-3" fill="url(#linearGradient-2)"></path>
+                    <image id="位图" x="0" y="0" width="35.8571108" height="40"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAvCAYAAACVDljoAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAALwAAAAAc+ip7AAAA10lEQVRYCe3ZsQoCMRCE4Ytw1+hzaG3l+5c2PpAWuc1hYP9+wBUmTTIK6/i125Y4vffHuMa7yGlxnrlLGyGKXuJ65y9+/F7j929R9oUeUXTDBwVCdDrnGqccir0/uU/lornn4qLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEASLChAxwqLgEITKorET6/f5H+eKcYt1XqUV49Hvu727Rii3WZyA/3vvUy0cvSI5E/cAAAAASUVORK5CYII="></image>
+                </g>
+                <g id="编组-3" transform="translate(5.557852, 12.544681)">
+                    <g id="形状结合" transform="translate(0.000000, 0.008511)">
+                        <image id="位图" x="0" y="0" width="25.612222" height="25.5319149"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAHqADAAQAAAABAAAAHgAAAADKQTcFAAABhklEQVRIDe2W23bEIAgAt9f//97enTSTkoS4ajdPLed4UAQG1E17ufw1uetsOPp/dsau3GOi1UZY4MO4nzVzoIz3WRfVJ9fAwB7CEC70pey99SG/vR8rQUCeysCHIdSOi2k6ibjG1iRHYKHPJYtQEsYTYh7X7DdLBs6gw4CjSoBEAcCdUpCd3hwKsAZm7xRoBgZGx9uC8L2pRADdMez0tG7pIIJZCz8VCih71dh7pKXI3ef1N2BOqyU+/by2BGbd0yVgPzCZjzbAflbVTRWbYKt9hPwKauIxA6XgaT3asaCh+yV4+6q9D6sUMKrN91ESOJ9yRbAbO6dR6hxHPv5uoxeJYIyp0+LdN6ER8nG3u38YsofBvflqnRdTl0Toa4kEjm2RDMymj8aX63oJrEwilP9QAK+OmdgMTKDVqQWrid2Kvh7vIZTADIxdONpqr0Hx5S7p0GFsMa2l9jsmSLDao19n+fED7DiEElzrIiYHKDSLoTCLcx7jd/Msyc4pGGr+AP/l8AS+AGG6YC6aFQu2AAAAAElFTkSuQmCC"></image>
+                        <path
+                            d="M10.6717592,1.70212766 L10.6717592,11.2680851 L20.267805,11.2680851 C20.093164,16.2910442 15.9274897,20.2561283 10.8860422,20.1980868 C5.84459466,20.1400454 1.77189337,16.080114 1.71366934,11.054474 C1.65544531,6.02883392 5.63300102,1.87622111 10.6717592,1.70212766 Z"
+                            id="path-5" fill="#FFD7BF"></path>
+                    </g>
+                    <g id="形状结合-2" transform="translate(10.885194, 0.000000)">
+                        <image id="位图" x="0" y="0" width="14.5135925" height="14.4680851"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEaADAAQAAAABAAAAEQAAAACOk5MBAAABRElEQVQ4Ed2SyVEDMRBF/8izFJSB4kACROIAyMmedDgTgBMgBQKAE1U2iz0Lr0e2RpYBXzihKk0v+v37j9TSH6ws5uilrGZbbi71OKROr0ByL01upGKDtbJXqbuVmgepXeD/RjWQmIKlVK2kKejSEWMb9mcubabsGWQ/KQMv1RSZAiMgPLddQAjBJbmLd+JHKbdmhk8XOL+Qn9HRAXQUOtCODhNsjnXPwJbSG6bxFeN3UDKGowfSfslxQQX+2ZbN75YLciPKe0eJFGBkOzUVfnm3u/gYd5LEwIAyU4Stnr65m3AnMXPqmxrjgiS/wtY+DjMUSDjsP/w8dCEZsUFkRaEwOvJPxsnBnPC8R7/JxXYtc3MtrWdYpAXCoaklmNgtE7uyebHnjjuZb0oZovYFXExgZwdgU1QnOQPt1xyilGB/9o/sF0lUUmr2FWdwAAAAAElFTkSuQmCC"></image>
+                        <path
+                            d="M1.70748146,1.70212766 C5.87161201,1.88746621 9.20522655,5.2106282 9.39114806,9.36170213 L1.70748146,9.36170213 L1.70748146,1.70212766 Z"
+                            id="path-7" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

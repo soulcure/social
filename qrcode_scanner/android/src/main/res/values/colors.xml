@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="scan_corner_color_green">#0effc2</color>
+    <color name="scan_corner_color_blue">#12C4FF</color>
+
+    <color name="colorOneKeyButtonNormal">#3F51B5</color>
+    <color name="colorOneKeyButtonPressed">#4F5DB1</color>
+    <color name="colorOneKeyButtonUnable">#848FD3</color>
+
+    <color name="colorOtherLoginButtonNormal">#f0f0f0</color>
+    <color name="colorOtherLoginButtonPressed">#C5C5C5</color>
+</resources>

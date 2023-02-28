@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="129px" viewBox="0 0 600 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14</title>
+    <g id="服务器（创建/设置）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="欢迎新人卡片" transform="translate(-75.000000, -445.000000)">
+            <g id="编组-14" transform="translate(75.423751, 445.712051)">
+                <rect id="矩形" fill="#35BA47" transform="translate(186.576249, 45.287949) rotate(-40.000000) translate(-186.576249, -45.287949) " x="179.576249" y="40.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#35BA47" transform="translate(410.576249, 25.287949) scale(-1, 1) rotate(-65.000000) translate(-410.576249, -25.287949) " x="403.576249" y="20.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#54C8F7" transform="translate(57.576249, 78.287949) rotate(-35.000000) translate(-57.576249, -78.287949) " x="50.5762492" y="73.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#54C8F7" transform="translate(556.576249, 53.287949) rotate(-20.000000) translate(-556.576249, -53.287949) " x="549.576249" y="48.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FF534F" transform="translate(8.576249, 119.287949) rotate(-40.000000) translate(-8.576249, -119.287949) " x="1.57624915" y="114.287949" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FF534F" transform="translate(467.576249, 59.287949) rotate(-60.000000) translate(-467.576249, -59.287949) " x="460.576249" y="54.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FFE41A" transform="translate(20.576249, 32.287949) scale(-1, 1) rotate(-40.000000) translate(-20.576249, -32.287949) " x="13.5762492" y="27.2879491" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FFD432" transform="translate(87.576249, 8.287949) scale(-1, 1) rotate(-70.000000) translate(-87.576249, -8.287949) " x="80.5762492" y="3.28794906" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FFD432" transform="translate(490.576249, 7.287949) scale(-1, 1) rotate(-5.000000) translate(-490.576249, -7.287949) " x="483.576249" y="2.28794906" width="14" height="10"></rect>
+                <rect id="矩形" fill="#FFD432" transform="translate(590.576249, 119.287949) scale(-1, 1) rotate(-45.000000) translate(-590.576249, -119.287949) " x="583.576249" y="114.287949" width="14" height="10"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

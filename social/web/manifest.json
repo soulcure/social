@@ -1,0 +1,18 @@
+{
+    "name": "Fanbook",
+    "short_name": "Fanbook",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Fanbook，一站式粉丝服务平台。助力品牌宠粉升级，让品牌读懂粉丝，让粉丝共筑品牌。在Fanbook，帮助粉丝抢先掌握官方资讯、独家爆料、实用攻略等精彩内容，与官方近距离实时互动交流。",
+    "orientation": "landscape",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src" : "icons/Icon-App-76x76@2x.png",
+            "type": "image/png",
+            "sizes" : "152x152"
+        }
+    ]
+}

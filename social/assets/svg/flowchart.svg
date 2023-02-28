@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>流程图-icon</title>
+    <defs>
+        <linearGradient x1="105.45297%" y1="66.7247242%" x2="78.4529974%" y2="66.7247242%"
+            id="linearGradient-1">
+            <stop stop-color="#3E53EB" offset="0%"></stop>
+            <stop stop-color="#2E3BEB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="70.6032292%" y1="1.66666667%" x2="32.4890188%" y2="109.666667%"
+            id="linearGradient-2">
+            <stop stop-color="#7693FF" offset="0%"></stop>
+            <stop stop-color="#546DFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="文件收发/服务器文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="流程图-icon">
+            <rect id="矩形" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="48"
+                height="48"></rect>
+            <g id="icon_文件_创建_流程图" transform="translate(3.000000, 3.000000)">
+                <g id="背景板" transform="translate(6.125000, 9.079208)">
+                    <path
+                        d="M4.12125,1.73265708 L31.3425,1.73265708 C31.9697873,1.73036011 32.5720568,1.97605836 33.0156189,2.4152288 C33.4591811,2.85439925 33.7073363,3.45070569 33.7050163,4.07178218 L33.7050163,28.8490099 C33.7050163,29.4693802 33.4560945,30.0643417 33.0130398,30.5030097 C32.5699851,30.9416777 31.969074,31.1881188 31.3425,31.1881188 L4.12125,31.1881188 C2.81647728,31.1881188 1.75873365,30.1408641 1.75873365,28.8490099 L1.75873365,4.07178218 C1.75641371,3.45070569 2.00456894,2.85439925 2.44813109,2.4152288 C2.89169324,1.97605836 3.49396274,1.73036011 4.12125,1.73265708 Z"
+                        id="path-2" fill="url(#linearGradient-1)"></path>
+                    <image id="位图" x="0" y="0" width="35.875" height="32.9207921"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAmCAYAAABZNrIjAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKaADAAQAAAABAAAAJgAAAABCcBOOAAAAu0lEQVRYCe2YywqFMBBDrY+Vf+T/f4+CcN34qAk4IN6dBOoiA6EVNE2Ps5qqcmkIpLDJOQ/YL9AE/aADKlYppTEOb2ODNUMrxIAztEPFCtBaBN0Y4B6SzwxKgjteKBqSYaLq2Hx5dUjV3zFJk1QRUPm4J01SRUDl4540SRUBlY970iRVBFQ+7kmTVBFQ+bgnTVJFQOXjnlSRfE7VOK8k3QajN9UZb30w2Psf/TFgB/WX62eGqG9v6e+eBE4LwRsn6XYJ6wAAAABJRU5ErkJggg=="></image>
+                </g>
+                <g id="前景板">
+                    <path
+                        d="M31.36875,1.28217822 C32.6652704,1.29171359 33.7098557,2.33757714 33.705,3.62128713 L33.705,37.6683168 L33.78375,37.6683168 C33.779385,37.7404469 33.779385,37.8127709 33.78375,37.884901 C33.785106,38.9205306 34.4073227,39.8565275 35.3675,40.2673267 L3.6925,40.2673267 C2.38772728,40.2673267 1.33,39.220072 1.33,37.9282178 L1.33,3.62128713 C1.33,2.32943295 2.38772728,1.28217822 3.6925,1.28217822 L31.36875,1.28217822 Z"
+                        id="path-5" fill="url(#linearGradient-2)"></path>
+                    <image id="位图" x="0" y="0" width="36.75" height="41.5841584"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAwCAYAAABnjuimAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAAMAAAAAD+SiooAAAA4ElEQVRYCe2ZQQqDMBREY3XbTS/T+x/CaygILkrRdAaMSOyug7E4gY8mhPnDy+x+CH+yKvqMMT7xeaHe3KJKrwqr3Zpolg1N9qgRNS9nJT+3vHkySpI0OaCm/FKBfZ33TEb53CQ5AXlxo4hi7jPsEO9unOTARtUPYaImqiag1nNGTVRNQK3njJqomoBazxk1UTUBtZ4zaqJqAmo9Z9RE1QTUes6oiaoJqPWcURNVE1DrOaMmqibwox4mOPG+1ThrRjlo4pBuXWkgxpkoTdffhlHr7WN/Znh5YEDXHdv2Kt0+ILQkHCy76p0AAAAASUVORK5CYII="></image>
+                </g>
+                <g id="s" transform="translate(7.498750, 7.389851)">
+                    <g id="路径-6" transform="translate(0.560000, 6.809406)">
+                        <image id="位图" x="0" y="0" width="22.75" height="22.5247525"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGqADAAQAAAABAAAAGgAAAABMybYKAAAD5UlEQVRIDe1VPXcTRxS9M7MfshZhbCMDapJQJmVqzqGghNI9FR3/QfkbqZI2anNOWqeHki7hpEgUQDZCliWtdndmct8u8u5aSg41J+Nj78fMvvfuffc+A5/bUtuAvMLw1GDc27G3fXrrzfS1w+jEAco399rBhkON8bcd4EYXUR6hMO395pe77gPr4fUaC7PADw/XzWRBfZ5Ixj8zSec2jO/DhXvQ3NW+VVl9nndOKXjLYrSG4b31Fib8gCQf42SUYwS7OS+hqiV0CRJj+oA/hvf7cC4qg23ONK+SRDkNpfZY+QGs43fmCK7oIY8ifNNvsVEjkp5E7xmYSLxgcRcIzAROL1AU5LyxQq34TiMKumzFEYuSZETnLMFlgM0bp8vbOpE8Sk8Eo/erMkmAN/jr7RIH99v0zecGxnbhVQfKhHBg9T4lfe9R4Ay4XGL4+Io2Cd1OJG/KnrAqQWIXKyqI1TUUdPKTQW/QwZ7eZ+XspesxDZEwCcwYmTnHfNUSQhlW/mwtaXCRKQS3NIbfNbimYA72YiryiEkGDE/atCFdc9I2QeCmCDppJe921DrIsxch9OyYH31FADEpecdqJzx+ickkY3Nd6a14eYtK+4J79yohYE1EZ0x6xucZissLDF6mGA5bfW1TJz4Qmiwoc3eHNHZ5neJuf4kxUhTpGlEakvG4ROIdz1MYxt9gf/gePdrjHb3IPrHPDcop6Y/r/iOFpMvGEo1HVCVBQoQ3KY4exRGgk2WMS1MGAXzhaYUVxZPCiuKoPM/CaCn4eIknf2Q4/fEKVe0jGRviaG/fINBjKuqClDAg6Cd9yJ7cpFcM5p0lMvc3jPud+78hK17D4M/SDlCVr2SqXBthdSKB+eWvGdLognL9QDMuadZKoor+gGIvOnnZ7AH3s8MJ1r23mE5ZGG1g6Dmxhawdo6vdo1dfK/TCEGadMAmpYIWu4Q83W+D7B0WTe/Kk8PyXFVyyII2kliPrirCPbeGlgaghXa/ulpQJEoPzyh/hOabb/qhD/fddjUhm3fl+wh7dZpEH/KX7SZG3E6TZDC7OOSE0nr1oFMfg0xFV1yd6l6DgbISMoPYgkRLqRNWsC+EN55eKiZUUIaefOJkp3y5/8tl2hP4dnmQSyymhNGce6RObMF1z1Yk2b7125FhEINM5oUYMgsCx0R5B7e/NcRqXU4RIyiSe57BCFmYYzFtF1YnkP+Px4Zo+IE3spmcCzw8Jp5p/V6HbN5vZKEgkiSXVSLeGaqNEiuHpaYzEEoWLd0m0neHaU0kXkcjk3jGCGonkQyY7Gemy6dfifNKj0DV8KJ5r0fZJ3/5/6N8Y+Acw37jKTBL/ZAAAAABJRU5ErkJggg=="></image>
+                        <path
+                            d="M3.8325,16.6596535 L13.58,16.6596535 C15.3097933,16.5707662 16.6662928,15.1561846 16.6662928,13.4412129 C16.6662928,11.7262411 15.3097933,10.3116595 13.58,10.2227723 L7.07875,10.2227723 C5.28589563,10.2227723 3.8325,8.7837667 3.8325,7.00866337 C3.8325,5.23356003 5.28589563,3.79455446 7.07875,3.79455446 L16.82625,3.79455446"
+                            id="path-7" stroke="#D2DDFF" stroke-width="3.29875"></path>
+                    </g>
+                    <g id="矩形备份-2" transform="translate(11.243750, 0.000000)">
+                        <image id="位图" x="0" y="0" width="16.625" height="16.460396"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAE6ADAAQAAAABAAAAEwAAAAAgb1CmAAABU0lEQVQ4Ee2TS07DQAyG/5lJ0halQTQLLsAOiTNwid4n54FLcAl2vQCLVCKtgDwmg23yVKqoSOyKF/FMZH9j/+MB/u2PFHAKidPYPhnxoP0ZNg1iSLrzEacLfF0ZLD8s0jhHfFciUfUccwxjEF4CHDcRvCqCUgGcK1B5GcJ9BjwWc0BKbo1a4YoYpKsYdb0B7I143herazlIDmxzxt7rtgmoSm7NjwiwhjJLOKvJG+haofJBQId89w5QtVCuy20WfWWvz0o04tYMfCgCsbGv9QLahlDlGqu3AHJwQxi4Hna/dSI2a2RRwplZsQeMbtnDEji5NRYb+kCt5QJkKK9rc4TzD/i8pUug2BPWa8YaxK4kkTPS5kcjXYWSYwnklXsEGd3qA8VM9eK48Wjwn+F4sEZsXNEZozGFcXI7uCw2G7f266GVzPbDT6qpXDQ63VobfUH+G0rMkCS8QnEwAAAAAElFTkSuQmCC"></image>
+                        <polygon id="path-9" fill="#F1F4FF"
+                            points="5.74 7.35519802 9.0125 10.5866337 5.74 13.8180693 2.47625 10.5866337"></polygon>
+                    </g>
+                    <g id="矩形备份-4" transform="translate(0.000000, 19.605198)">
+                        <image id="位图" x="0" y="0" width="11.375" height="11.2623762"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAADaADAAQAAAABAAAADQAAAACpyhiuAAAA1UlEQVQoFb1Ruw3CMBB9tmMpSgoQa1BSMgcrMEfmYAXmoKRkDQRFkEWwzb0YxXLFp+Cks+J7fvfuXoB/hSqFokIHhdO+rC83UeoRUJJyZpIQtscKc1dj0Ba1SZjzETYMuNQOu9WDxEzqosbt0MI2CwS0CMGMDbX20Ogx3M5o1j06FfSkxJGoQAIwK5I1Yq+xq4nED46UFIxMkbAQiJhpXLlkJUIfRqnEpWvrhetFMbXgTry7++gci1mJttIlLg1ci2SNGN9IZPfwi+VsQWL3/ueOT789nqt7XReCbYSKAAAAAElFTkSuQmCC"></image>
+                        <polygon id="path-11" fill="#F1F4FF"
+                            points="1.75 1.73267327 1.75 6.30693069 6.37 6.30693069 6.37 1.73267327"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

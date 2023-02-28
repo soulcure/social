@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-收集表</title>
+    <defs>
+        <linearGradient x1="99.9452055%" y1="40.6294118%" x2="80.9452055%" y2="40.6294118%"
+            id="linearGradient-1">
+            <stop stop-color="#EB9000" offset="0%"></stop>
+            <stop stop-color="#EB7E00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="74.7316665%" y1="4.66666667%" x2="32.1345277%" y2="104.666667%"
+            id="linearGradient-2">
+            <stop stop-color="#FFCD00" offset="0%"></stop>
+            <stop stop-color="#FFAB00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="文件收发/服务器文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-收集表">
+            <rect id="bg" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="48"
+                height="48" rx="6"></rect>
+            <g id="icon_文件_创建_在线收集表" transform="translate(4.000000, 3.000000)">
+                <path
+                    d="M10.8758965,11.1257143 L37.3918713,11.1257143 C38.832301,11.1257143 40,12.2769821 40,13.6971429 L40,37.6971429 C40,39.1173036 38.832301,40.2685714 37.3918713,40.2685714 L10.8758965,40.2685714 C9.43546686,40.2685714 8.26776788,39.1173036 8.26776788,37.6971429 L8.26776788,13.6971429 C8.26776788,12.2769821 9.43546686,11.1257143 10.8758965,11.1257143 Z"
+                    id="背景板" fill="url(#linearGradient-1)"></path>
+                <g id="前景板">
+                    <path
+                        d="M31.3062378,1.69714286 C32.7466675,1.69714286 33.9143664,2.84841064 33.9143664,4.26857143 L33.9143664,37.6971429 C33.9132652,38.9166379 34.7811144,39.9691792 35.9921756,40.2171429 L35.9921756,40.2685714 L4.35557488,40.2685714 C2.91514519,40.2685714 1.74744621,39.1173036 1.74744621,37.6971429 L1.74744621,4.26857143 C1.74744621,2.84841064 2.91514519,1.69714286 4.35557488,1.69714286 L31.3062378,1.69714286 Z"
+                        id="path-3" fill="url(#linearGradient-2)"></path>
+                    <image id="位图" x="0" y="0" width="37.3831776" height="42"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAxCAYAAABDEFA9AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAK6ADAAQAAAABAAAAMQAAAABEjMjbAAAAyElEQVRoBe2ZwQqCQBRFncpVf9T/f0yrAiE3YtO9OMrQ/uGI58ElxRbH42U2r+sONGllzTk/dD0qb+WjfJVdJ6X0qgFu1U3W9aQYdFBmpampYQ1mYBud9VbNwV5MeJQBNupLYRazMkANqAE1iOoAZjG7GOCcjWoCZjErA9SAGlCDqA5gFrOLAc7ZqCZgFrMyQA2oATWI6gBmz2pWW89tA2oH/0s7P/TZe9Uf/byF2ZaHNaxBe+VeCHff3Zqj2O218XwWLn7ObeAHf20dNZ/C2/QAAAAASUVORK5CYII="></image>
+                </g>
+                <g id="形状结合" transform="translate(6.120409, 14.768571)">
+                    <image id="位图" x="0" y="0" width="26.0812867" height="21.4285714"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAHqADAAQAAAABAAAAGQAAAAB4YesVAAACWUlEQVRIDe2WS27bMBCGf76kQHIcoIueoDco0Dv0AL1Cdz2D4TN01yv0AF10kX2A9iBZFIgrCbFe7PxuKDC2FLtyds0ABiEOZz4OZ4Ym8L+Jeu6AvYdarzH4Xa3glYLf5wwL9hVzvgn9uoa7yuG6FMZs0d2VaD6s0OzDnw1M6LfPSHSLXHnkRgu8R+MVyt6ifP8JdQy3cyLbtwnQpMCic1gmQI4O1ii0NWC1GMhJeFk3RH42eB+qDRa+R6IMVN9COys5btDI8W8l963sYZdvbmZS6HRSKYoxqCFUP21Hn6OO6fDHF9jbLfTrFP3bj2jj/NDwGFSi9p1G3XcovMHdZoMiLrIDcHB4WSKrLFzWovmdo4qLI6wJOeXxxpHGUNNgUy9QxPYHEQeHrMxUYelrpCrBduuxYWXe/EJDo3ev4M6BPgITyh5cLrFQHa4YhZSBlWS0PC7uPLtARaPqHhmrd06ktKeYv4MkW0G/yZGmnTi0uFQtEmNgVC9rODpoqVIjvXnhU9Grfz/ewOJ4tJ1YocxfLyfSOqQ0kk056VEXqveUnNIuliHi62vg53fZSSb910mMFpbRSmRq9wO0pIBzTmuZf2iZOVBuYIhYnO9uFrn2yuQewhCJqpWgAKOKMhdK2wHMjwd4LfBCqlZuPZEIzs8g50Dp4xGYE6fAz4WOgp+CS3876qWnm9BiY5cD1xyTg4iDwVjkxiKjXqDV1I0U7I+Nk2AaxnCJdvcvw3nvUNXp4X8sdafKwV09ZhhuNb4sqJ96VYzZTs2dBKYx4eEtNfWOmoK8zPME/gC1upkoLc12cAAAAABJRU5ErkJggg=="></image>
+                    <polygon id="path-5" fill="#FFFBE0"
+                        points="10.4064334 16.26 7.62442947 13.5 3.4514236 9.44571429 6.21603999 6.71142857 10.4064334 10.8085714 19.6131276 1.71428571 22.377744 4.44"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

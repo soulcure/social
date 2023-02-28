@@ -1,0 +1,129 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+
+  #编译ad-hoc包
+  lane :make do
+    # 切换签名模式
+    automatic_code_signing(
+      # 工程文件所在路径
+      path:"Runner.xcodeproj",
+      # 是否使用自动签名，这里如果是打包的话应该一般都为false吧，默认也是false
+      use_automatic_signing:false,
+      # 打包的team ID， 也就是打包使用的证书中的team ID，这个如果不知道是什么的话可以在xCode中设置好签名用的描述文件后到xcodeproj下的pbxproj文件中搜索“DEVELOPMENT_TEAM”，它的值就是了
+      team_id:"N59GEH37WQ",
+      # 这个就不用说了，需要修改的targets
+      targets:"Runner",
+      # 用哪种方式打包“iPhone Develop”还是“iPhone Distribution”
+      code_sign_identity:"Apple Distribution",
+      # 描述文件名称， 也就是使用哪个描述文件打包
+      profile_name: "buff_adhoc_new"
+    )
+
+     automatic_code_signing(
+      # 工程文件所在路径
+      path:"Runner.xcodeproj",
+      # 是否使用自动签名，这里如果是打包的话应该一般都为false吧，默认也是false
+      use_automatic_signing:false,
+      # 打包的team ID， 也就是打包使用的证书中的team ID，这个如果不知道是什么的话可以在xCode中设置好签名用的描述文件后到xcodeproj下的pbxproj文件中搜索“DEVELOPMENT_TEAM”，它的值就是了
+      team_id:"N59GEH37WQ",
+      # 这个就不用说了，需要修改的targets
+      targets:"screenshare",
+      # 用哪种方式打包“iPhone Develop”还是“iPhone Distribution”
+      code_sign_identity:"Apple Distribution",
+      # 描述文件名称， 也就是使用哪个描述文件打包
+      profile_name: "buff_broadcast_adhoc_new"
+    )
+
+    # 生成ad-hoc包
+    gym(
+      clean:true,                     # 打包前clean项目
+      export_method: "ad-hoc",   # 导出方式
+      scheme: "Runner",   # scheme
+      configuration: "Release",         # 环境
+      output_directory: "build", # ipa的存放目录
+      output_name: "ios",          # 输出ipa的文件名为当前的build号
+      archive_path: "build/buff.xcarchive",
+      export_options: {
+        method: "ad-hoc",
+        provisioningProfiles: { 
+          "com.idreamsky.buff" => "buff_adhoc_new",
+          "com.idreamsky.buff.broadcast" => "buff_broadcast_adhoc_new",
+        },
+        signingCertificate: "Apple Distribution",
+      }
+    )
+
+  end
+
+  #编译app-store包
+  lane :make_appstore do
+    # 切换签名模式
+    automatic_code_signing(
+      # 工程文件所在路径
+      path:"Runner.xcodeproj",
+      # 是否使用自动签名，这里如果是打包的话应该一般都为false吧，默认也是false
+      use_automatic_signing:false,
+      # 打包的team ID， 也就是打包使用的证书中的team ID，这个如果不知道是什么的话可以在xCode中设置好签名用的描述文件后到xcodeproj下的pbxproj文件中搜索“DEVELOPMENT_TEAM”，它的值就是了
+      team_id:"N59GEH37WQ",
+      # 这个就不用说了，需要修改的targets
+      targets:"Runner",
+      # 用哪种方式打包“iPhone Develop”还是“iPhone Distribution”
+      code_sign_identity:"Apple Distribution",
+      # 描述文件名称， 也就是使用哪个描述文件打包
+      profile_name: "buff_dis_new"
+    )
+
+    automatic_code_signing(
+      # 工程文件所在路径
+      path:"Runner.xcodeproj",
+      # 是否使用自动签名，这里如果是打包的话应该一般都为false吧，默认也是false
+      use_automatic_signing:false,
+      # 打包的team ID， 也就是打包使用的证书中的team ID，这个如果不知道是什么的话可以在xCode中设置好签名用的描述文件后到xcodeproj下的pbxproj文件中搜索“DEVELOPMENT_TEAM”，它的值就是了
+      team_id:"N59GEH37WQ",
+      # 这个就不用说了，需要修改的targets
+      targets:"screenshare",
+      # 用哪种方式打包“iPhone Develop”还是“iPhone Distribution”
+      code_sign_identity:"Apple Distribution",
+      # 描述文件名称， 也就是使用哪个描述文件打包
+      profile_name: "buff_broadcast_dis_new"
+    )
+
+    # 生成app-store包
+    gym(
+      clean:true,                     # 打包前clean项目
+      export_method: "app-store",   # 导出方式
+      scheme: "Runner",   # scheme
+      configuration: "Release",         # 环境
+      output_directory: "build", # ipa的存放目录
+      output_name: "ios",          # 输出ipa的文件名为当前的build号
+      archive_path: "build/buff.xcarchive",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: { 
+          "com.idreamsky.buff" => "buff_dis_new",
+          "com.idreamsky.buff.broadcast" => "buff_broadcast_dis_new",
+        },
+        signingCertificate: "Apple Distribution",
+      }
+    )
+
+  end
+
+end

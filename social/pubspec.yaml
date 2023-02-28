@@ -1,0 +1,614 @@
+name: im
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.6.40+81
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: none # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  fanbook_circle_detail_list:
+    path: ../plugins/fanbook_circle_detail_list
+
+  # 动画 https://github.com/flutter/packages/tree/master/packages/animations
+  animations: ^2.0.2
+
+  # 多音频文件播放器(修改的原因是因为原播放器在播放的时候会强行切AVAUDIOSESSION) https://github.com/bluefireteam/audioplayers
+  audioplayers:
+    git:
+      url: https://github.com/BuildAndRelease/audioplayers.git
+      path: packages/audioplayers
+      ref: 232a7d271be38be12d25c54f64b505ef766cab50
+  # 城市列表、联系人列表，索引&悬停 https://github.com/flutterchina/azlistview
+  azlistview:
+    git:
+      url: https://github.com/jing-pei/azlistview.git
+      ref: 1.0.1
+  # 缓存网络图像文件 https://github.com/Baseflow/flutter_cached_network_image
+  cached_network_image: ^3.2.0
+  # Unicode（扩展）字符族 https://github.com/dart-lang/characters
+  characters: ^1.1.0
+  # 官方connectivity替代插件，用于检测网络连接状态 https://github.com/fluttercommunity/plus_plugins/tree/main/packages/
+  connectivity_plus: ^2.2.0
+  # 裁剪小组件 https://github.com/xclud/flutter_crop
+  crop: ^0.5.2
+  # 支持SHA、MD5、HMAC 哈希加密插件（dart插件） https://github.com/dart-lang/crypto
+  crypto: ^3.0.1
+  # 日期格式插件 https://github.com/tejainece/date_format
+  date_format: ^2.0.5
+  # device_info官方替代插件，用于获取当前设备信息 https://github.com/fluttercommunity/plus_plugins/tree/main/packages/
+  device_info_plus: ^3.2.1
+  # 获取设备当前首选语言和当前区域环境 https://github.com/magnatronus/flutter-devicelocale
+  devicelocale: ^0.5.0
+  # http请求库 https://github.com/flutterchina/dio
+  dio: ^4.0.4
+  # 获取当前设备的可用磁盘空间与磁盘总量 https://github.com/mboeddeker/disk_space
+  disk_space: ^0.2.1
+  # 虚线边框小部件 https://github.com/ajilo297/Flutter-Dotted-Border
+  dotted_border: ^2.0.0+2
+  # 用于decoration的虚线边框，类似BoxDocoration https://github.com/mdalameen/dotted_decoration
+  dotted_decoration: ^2.0.0
+  # 基于事件总线的解耦方案 https://github.com/marcojakob/dart-event-bus
+  event_bus: ^2.0.0
+  # 具有渐隐边缘的滚动视图 https://github.com/mponkin/fading_edge_scrollview
+  fading_edge_scrollview: ^2.0.1
+  # 获取网络、运营商插件
+  fb_carrier_info_plugin:
+    path: ../plugins/fb_carrier_info_plugin
+  # 哔哩哔哩那出品的播放器插件，支持流播放 https://github.com/befovy/fijkplayer
+  #  fijkplayer: #^0.9.0
+  #    path: ../plugins/fijkplayer
+  # 文件大小单位转换器KB、M、TB https://github.com/synw/filesize
+  filesize: ^2.0.1
+  # 特色图表 https://github.com/imaNNeoFighT/fl_chart
+  fl_chart: ^0.36.2
+  # 音频输入输出设备管理插件 https://github.com/yungzhu/flutter_audio_manager
+  flutter_audio_manager:
+    git:
+      url: https://github.com/jing-pei/flutter_audio_manager.git
+      ref: 2.0.0+3
+  # 录音插件 支持录音/暂停/继续/停止，可以在录音同时获取到底层提供的音频信息 https://github.com/rmbrone/flutter_audio_recorder
+  flutter_audio_recorder:
+    git:
+      url: https://github.com/BuildAndRelease/flutter_audio_recorder.git
+      ref: 8ae42284ca16ba697117afab321dace5e0c57366
+  # bloc状态管理框架 https://github.com/felangel/bloc/tree/master/packages/flutter_bloc
+  #  flutter_bloc: ^8.0.1
+  # 这个插件等外包同步更新到8+并将bloc接口的使用更新后再做升级
+  flutter_bloc: ^7.1.0
+  # 腾讯Bugly插件，异常上报和运营统计分析 https://github.com/crazecoder/flutter_bugly
+  flutter_bugly:
+    git:
+      url: https://gitee.com/fanbook/flutter_bugly.git
+      ref: b60a1dd7035b06e43cb07eb177809356a5f0df6f
+  # RSA、AES加密库 https://github.com/YourksChan/flutter_cipher
+  flutter_cipher:
+    git:
+      url: https://github.com/jing-pei/flutter_cipher.git
+      ref: 2.0.0
+  # 图片压缩压缩插件 https://github.com/OpenFlutter/flutter_image_compress
+  flutter_image_compress: ^1.1.0
+  # 内嵌原生WebView插件  https://github.com/pichillilorenzo/flutter_inappwebview
+  flutter_inappwebview:
+    git:
+      url: https://gitee.com/fanbook/flutter_inappwebview.git
+      ref: v5.3.2-hotfixes
+  # 键盘可见性反应器（用于检测键盘可见性） https://github.com/MisterJimson/flutter_keyboard_visibility
+  flutter_keyboard_visibility: ^5.1.1
+  # 网址预览插件，可以预览网址的内容 https://github.com/yungzhu/flutter_link_preview
+  flutter_link_preview:
+    git:
+      url: https://github.com/BuildAndRelease/flutter_link_preview.git
+      ref: e83c7e2901ca134c4a81b1f4f6eb94f25009a8bd
+  # 解析文本，用于提取url、phone、email等，同时可支持Regex进行自定义解析 https://github.com/fayeed/flutter_parsed_text
+  flutter_parsed_text:
+    git:
+      url: https://github.com/remove/flutter_parsed_text.git
+      ref: 0dd3562417ddcffed6025dc22baaf7d9341d7e75
+  # 集成直播模块插件, 用于ios屏幕旋转
+  flutter_rotate:
+    path: ../plugins/flutter_rotate
+  # 实时监测Android/IOS屏幕方向的插件（不支持web和PC） https://github.com/515445681/flutter_screen_orientation
+  flutter_screen_orientation:
+    git:
+      url: https://github.com/jing-pei/flutter_screen_orientation.git
+      ref: 1.0.1
+  #    path: ../plugins/flutter_screen_orientation
+  # 安全数据存储（IOS存入钥匙串、安卓v5.0以后可启用EncryptedSharedPreferences做加密存储） https://github.com/mogol/flutter_secure_storage
+  flutter_secure_storage:
+    git:
+      url: https://gitee.com/fanbook/flutter_secure_storage.git
+      ref: v4.2.1-hotfix
+  # 滑动过程中可固定标头的插件 https://github.com/letsar/flutter_sticky_header
+  flutter_sticky_header: ^0.6.0
+  # VLC播放器的flutter实现，可以播放流媒体 https://github.com/solid-software/flutter_vlc_player
+  flutter_vlc_player:
+    path: ../plugins/flutter_vlc_player
+  # webrtc（网页即时通讯），基于GoogleWebRTC https://github.com/flutter-webrtc/flutter-webrtc
+  flutter_webrtc:
+    git:
+      url: https://gitee.com/fanbook/flutter-webrtc.git
+      ref: 0.7.25
+  # 采用外接纹理的实现图片显示 https://github.com/BuildAndRelease/flutter_image_view
+  flutter_image_view:
+    git:
+      url: https://github.com/BuildAndRelease/flutter_image_view.git
+      ref: 2.0.1+1
+  # 调用微信原生SDK插件 https://github.com/OpenFlutter/fluwx master
+  # fluwx: ^3.4.3
+  fluwx:
+    git:
+      url: https://github.com/jing-pei/fluwx.git
+      ref: 3.6.1+4
+  # FutureOr对象封装小部件（代码量少，建议剔除或者封装为本项目的工具类） https://github.com/ali2236/future_or
+  future_or:
+    git:
+      url: https://github.com/jing-pei/future_or.git
+      ref: 2.0.1+1
+  # 解决官方不支持GBK转化问题 https://github.com/lixiangthinker/fast_gbk
+  fast_gbk: ^1.0.0
+  # 手势缩放小工具 https://github.com/shichaohui/gesture_zoom_box
+  gesture_zoom_box:
+    git:
+      url: https://github.com/jing-pei/gesture_zoom_box.git
+      path: package_src
+      ref: 2.0.0
+  # GetX轻量级的Flutter整体解决方案（状态管理、依赖注入和路由管理） https://github.com/jonataslaw/getx
+  get: ^4.5.1
+  # 针对列表进行分组，并支持标题 https://github.com/Daniel-Ioannou/flutter_group_list_view
+  group_list_view: ^1.1.1
+  # 轻量级的键值数据库（NoSql Dart版本） https://github.com/hivedb/hive
+  hive: ^2.0.5
+  # 针对hive dart实现版本的Flutter扩展 https://github.com/hivedb/hive/tree/master/hive_flutter
+  hive_flutter: ^1.1.0
+  # http官方实现库 https://github.com/dart-lang/http
+  http: ^0.13.4
+  # 裁剪图像工具 https://github.com/hnvn/flutter_image_cropper
+  image_cropper: 1.4.1
+  # 保存图片至图库插件 https://github.com/hui-z/image_gallery_saver
+  image_gallery_saver: ^1.7.1
+  # 图片选择器加强版（image_picker），可选择音频、视频 https://gitee.com/fanbook/x_picker
+  x_picker:
+    git:
+      url: https://gitee.com/fanbook/x_picker.git
+      ref: 4f7c004f01f62e7fe8d18803bb4270418cc900b8
+  # 官方图片选择器 https://github.com/flutter/plugins/tree/master/packages/image_picker/image_picker
+  # image_picker: ^0.8.3
+  image_picker:
+    git:
+      url: https://github.com/BuildAndRelease/plugins.git
+      path: packages/image_picker/image_picker/
+      ref: 19a78f452a96f92904ce3318430d6c232f62aa68
+  # 保存图片至相册插件 https://github.com/Samoy/image_save
+  image_save:
+    git:
+      url: https://github.com/BuildAndRelease/image_save.git
+      ref: 71cf5fe5311591fec0ed79979b677edf3011cac4
+  # 拖拽排列网格视图插件 https://github.com/huhuang03/reorderable_grid_view
+  reorderable_grid_view:
+    path: ../plugins/reorderable_grid_view
+  # 在APP内调起应用商城购买、订阅服务 https://github.com/flutter/plugins/tree/master/packages/in_app_purchase/in_app_purchase
+  in_app_purchase:
+    path: ../plugins/in_app_purchase
+  # 极光推送Fluter插件 https://github.com/jpush/jpush-flutter-plugin
+  jpush_flutter:
+    git:
+      url: https://github.com/BuildAndRelease/jpush-flutter-plugin.git
+      ref: 4.6.4
+  js: ^0.6.3
+  # 通过添加注解再运行【flutter pub run build_runner build】自动生成Json与dart对象的转换类 https://github.com/google/json_serializable.dart
+  json_serializable: ^6.1.5
+  # 极光官方封装Jverifycation SDK的插件，用于认证操作（注册、登录、二次验证等） https://github.com/jpush/jverify-flutter-plugin
+  jverify:
+    git:
+      url: https://github.com/iivke/jverify-flutter-plugin.git
+      ref: v2.7.8+1
+  # 带有心动爆炸特效的按钮图标 https://github.com/fluttercandies/like_button
+  like_button:
+    git:
+      url: https://github.com/jing-pei/like_button.git
+      ref: 2.0.4
+  # 日志记录插件，可以配置日志等级 https://github.com/dart-lang/logging
+  logging: ^1.0.2
+  # 汉字转拼音库 https://github.com/flutterchina/lpinyin
+  lpinyin: ^2.0.3
+  # 调用Android的MediaProjection，实现那屏幕录制和系统音频录制（安卓专用，需要权限） https://github.com/patrick-fu/flutter_media_projection_creator
+  media_projection_creator: ^0.3.0
+  # Apple ReplayKit框架支持，用于录屏和录制系统音频（安卓专用） https://github.com/patrick-fu/flutter_replay_kit_launcher
+  replay_kit_launcher: #0.2.0
+    path: ../plugins/replay_kit_launcher
+  # 内存检测器 https://github.com/asjqkkkk/memory_checker
+  #  memory_checker: ^0.0.5
+  # 多图片选择器，原始版本已不被支持，作者推荐【https://github.com/fluttercandies/flutter_wechat_assets_picker】
+  multi_image_picker:
+    git:
+      url: https://gitee.com/fanbook/fb_media_picker.git
+      ref: dc542492d0dcae82501dfdb1ebe373615f1fdb26
+  # IOS原生文本输入框插件 https://gitee.com/fanbook/native_text_field
+  native_text_field:
+    git:
+      url: https://gitee.com/fanbook/native_text_field.git
+      ref: cd7748224f7d4979ee5461de5ae05a20b596788a
+  # TODO 后续flutter_screen_orientation需要替换成以下插件
+  #目前仍继续使用的原因是native_device_orientation灵敏度对于直播功能而言过高
+  # 设备旋转监听 https://github.com/rmtmckenzie/flutter_native_device_orientation
+  #  native_device_orientation: ^1.0.0
+  # IOS和安卓设备的通知权限检测与请求插件 https://github.com/Vanethos/flutter_notification_permissions
+  notification_permissions: ^0.6.1
+  # 土司 https://github.com/OpenFlutter/flutter_oktoast
+  oktoast: ^3.1.5
+  # openinstall Flutter插件，用于快速安装、一键跳转、下载渠道统计等
+  openinstall_flutter_plugin:
+    path: ../plugins/openinstall_flutter_plugin-2.1.2
+  # 官方package_info推荐替代插件，用于package信息检测 https://github.com/fluttercommunity/plus_plugins/tree/main/packages/
+  package_info_plus: ^1.3.0
+  # 文件系统查用路径查找器 https://github.com/flutter/plugins/tree/master/packages/path_provider/path_provider
+  path_provider: ^2.0.8
+  # 权限请求插件 https://github.com/Baseflow/flutter-permission-handler
+  permission_handler: ^8.3.0
+  # 具有缩放功能的照片查看器 https://github.com/bluefireteam/photo_view
+  photo_view:
+    git:
+      url: https://github.com/jing-pei/photo_view.git
+      ref: 2.0.0
+  provider: ^6.0.2
+  # 下拉刷新、上拉加载插件 https://github.com/peng8350/flutter_pulltorefresh
+  pull_to_refresh: ^2.0.0
+  # 二维码扫码器 https://github.com/juliuscanute/qr_code_scanner
+  qr_code_scanner:
+    git:
+      url: https://github.com/yzhtracy/qr_code_scanner.git
+      ref: eda570acbf04a5a065d5cc4ef6d8704e1e2d69bf
+  # 二维码生成器 https://github.com/theyakka/qr.flutter
+  qr_flutter: ^4.0.0
+  # Quill编辑器Delta格式的flutter插件支持 https://github.com/pulyaevskiy/quill-delta-dart
+  # quill_delta: ^2.0.0e
+  # 可拖放重排列表小部件 https://github.com/hanshengchiu/reorderables
+  # 不升级原因：0.4.1版本有个bug导致web上频道列表抖动（https://github.com/hanshengchiu/reorderables/issues/122）
+  # 先以null safety升级优先，web端的问题作为bug交由插件维护者进行修改
+  reorderables: 0.4.2
+  # 跨平台html包（可以换回dart:html）https://github.com/dint-dev/universal_html
+  universal_html: ^2.0.8
+  rich_input:
+    path: ../rich_input-1.2.1
+  # 高性能网格布局视图 https://github.com/letsar/flutter_staggered_grid_view
+  flutter_staggered_grid_view: ^0.6.1
+  # 小部件可见性检测，用于监听小部件是否可见的小工具 https://github.com/google/flutter.widgets/tree/master/packages/visibility_detector
+  visibility_detector: ^0.2.2
+  # 富媒体编辑器 https://gitee.com/fanbook/tun_editor
+  tun_editor:
+    git:
+      url: https://gitee.com/fanbook/tun_editor.git
+      ref: 0.0.52
+  # StreamControllers的扩展，提供了zip、timer等扩展 https://github.com/ReactiveX/rxdart
+  rxdart: ^0.27.3
+  # 检测手机是否抖动 https://github.com/deven98/shake
+  shake: ^2.0.0
+  # 简单数据持久化 https://github.com/flutter/plugins/tree/master/packages/shared_preferences/shared_preferences
+  shared_preferences: ^2.0.13
+  # 允许多个程序共享数据（仅IOS） https://github.com/patrick-fu/flutter_shared_preference_app_group
+  shared_preference_app_group: ^0.3.0
+  # 编码/解码字节和UTF8的RC4密码器 https://github.com/zonble/simple_rc4_dart
+  simple_rc4: ^0.2.0
+  # 可以拖拽滑动的Sheet https://github.com/bxqm/sliding_sheet
+  sliding_sheet: ^0.5.2
+  # 用于雪花ID的生成 https://github.com/928799934/dart-snowflake
+  snowflake:
+    git:
+      url: https://github.com/jing-pei/dart-snowflake.git
+      ref: 2.0.1
+  # SQLite Flutter版本 https://github.com/tekartik/sqflite
+  # sqflite: ^2.0.2
+  sqflite:
+    git:
+      url: https://github.com/jing-pei/sqflite.git
+      path: sqflite
+      ref: fb98dd3f3ee955eabad6846853ee1090d9bf966b
+  # SQLite for web版本 sqflite建议的web实现分支（原分支已被作者删除） https://github.com/deakjahn/sqflite_web
+  sqflite_web:
+    git:
+      url: https://github.com/deakjahn/sqflite_web.git
+      ref: 5e394d2664e88cc9249b4f64da93e6dd2b715048
+  # 在屏幕叠加层中显示提示工具的小部件 https://github.com/escamoteur/super_tooltip
+  super_tooltip: ^1.0.1
+  # 查看系统信息 (由于Dart官方对该插件标记未知发布，作者表示难以接受，已停止维护) https://github.com/mezoni/system_info
+  system_info: ^1.0.1
+  # 语法糖：元组实现 https://github.com/google/tuple.dart
+  tuple: ^2.0.0
+  # 用于IOS的Universal Links和安卓的Deep Links，并可以自定义链接，用于被其他APP拉起 https://github.com/avioli/uni_links
+  uni_links:
+    git:
+      url: https://github.com/BuildAndRelease/uni_links.git
+      ref: feature/0.5.1_fix
+      path: uni_links
+  # 启动URL行为（拨打电话、发送短信等） https://github.com/flutter/plugins/tree/master/packages/url_launcher/url_launcher
+  url_launcher: ^6.0.18
+  # 用于在web环境下设置URL策略 https://github.com/simpleclub/url_strategy
+  url_strategy: ^0.2.0
+  # 通用唯一标识符，符合RFC4122标准 https://github.com/Daegalus/dart-uuid
+  uuid: ^3.0.5
+  # 官方视频播放器 https://github.com/flutter/plugins/tree/master/packages/video_player/video_player
+  video_player:
+    git:
+      url: https://github.com/BuildAndRelease/plugins.git
+      path: packages/video_player/video_player/
+      ref: 2.2.10+8
+  # HTTP Live Streaming播放器 for web https://github.com/balvinderz/video_player_web_hls
+  video_player_web_hls:
+    git:
+      url: https://gitee.com/fanbook/video_player_web_hls.git
+      ref: 61356a3aed92363feb653a2e5dc92a845f434c4e
+  #启用或禁用设备唤醒锁，多用于防止设备休眠 https://github.com/creativecreatorormaybenot/wakelock/tree/main/wakelock
+  wakelock: ^0.6.1+1
+  # 为WebSocket连接包装器 https://github.com/dart-lang/web_socket_channel
+  web_socket_channel: ^2.1.0
+  # 用于处理IOS、Android、web三个平台的SVG资源 https://github.com/peiffer-innovations/websafe_svg
+  websafe_svg: ^2.1.0
+  # 即构科技 (ZEGO) 极速音视频Flutter SDK https://pub.dev/packages/zego_express_engine
+  # !!! 保持此插件版本2.13.0 !!!
+  zego_express_engine: 2.13.0
+  # ZEGO web版实现
+  zego_ww:
+    path: ../plugins/zeinn_zego_flutter_plugin
+  # 原生输入实现，为了支持原生的输入操作体验（如IOS的触摸连续输入等） https://gitee.com/fanbook/flutter_rich_input
+  flutter_text_field:
+    git:
+      url: https://gitee.com/fanbook/flutter_rich_input.git
+      ref: main
+  # glob是匹配文件和目录的模式 https://github.com/dart-lang/glob
+  glob: ^2.0.2
+  # 用于显示Json模型的视图小部件 https://github.com/Frezyx/flutter_json_view
+  flutter_json_view: ^0.3.0
+  # 列表项侧滑库，可以用于侧滑删除等自定义操作 https://github.com/luckysmg/flutter_swipe_action_cell
+  flutter_swipe_action_cell: ^2.1.6
+  #  fb_pricacy_monitor是检测Android权限合规的插件,需要将AndroidManifest中的
+  #  io.flutter.app.FlutterApplication配置为com.idreamsky.fb_privacy_monitor.FbPrivacyMonitorApplication进行检测
+  #  在发布版本前一定要屏蔽掉该插件,并将Application重置为FlutterApplication
+  #  fb_privacy_monitor:
+  #    path: ../plugins/fb_privacy_monitor
+  # 自定义动态卡片
+  dynamic_card:
+    path: ../plugins/dynamic_card
+  # 限制函数的连续执行，防止按钮重复点击用的 https://github.com/mhrst/just_throttle_it
+  just_throttle_it: ^2.1.0
+  just_debounce_it: ^4.1.0
+  # 文件选择器 https://github.com/miguelpruivo/flutter_file_picker
+  file_picker: ^4.3.3
+  # 分享到第三方应用，官网不在维护，推荐使用share_plus https://github.com/fluttercommunity/plus_plugins/tree/main/packages/share_plus
+  share:
+    path: ../plugins/share
+  # native方式计算文件的MD5值 https://github.com/zingwin/fb_utils
+  fb_utils:
+    git:
+      url: https://github.com/jing-pei/fb_utils.git
+      ref: 2.0.0
+  scrollable_positioned_list: ^0.2.3
+  # 官方Text扩展组件，支持特殊文本效果（比如图片，@人）等 https://github.com/fluttercandies/extended_text
+  extended_text: ^7.0.1
+  # 翻转动画计数器 https://github.com/h65wang/flutter-animated-counter
+  animated_flip_counter: ^0.2.2
+  # 用于自定义阴影 https://github.com/marcelopmont/simple_shadow
+  simple_shadow: ^0.3.0
+  # 最新版本的动态视图
+  dynamic_view:
+    git:
+      url: https://github.com/hyzmm/flutter-dynamic-view
+      ref: v1.3.1
+  # 桥接unity社区
+  flutter_unity:
+    path: ../plugins/flutter_unity
+  # 支付宝flutter版本 https://github.com/yzhtracy/fb_ali_pay
+  fb_ali_pay:
+    git:
+      url: https://github.com/jing-pei/fb_ali_pay.git
+      ref: 2.0.1
+  # 文件阅读器 https://github.com/fluttercandies/flutter_filereader
+  flutter_filereader:
+    path: ../plugins/flutter_filereader-3.0.0
+  # 桥接Apple ID登录操作 https://github.com/aboutyou/dart_packages/tree/master/packages/sign_in_with_apple
+  sign_in_with_apple: ^3.3.0
+  # 任务系统抽象数据流转封装，可自定义UI效果，可用于引导业务功能 https://github.com/hyzmm/flutter_quest_system
+  quest_system:
+    git:
+      url: https://github.com/hyzmm/quest-system.git
+      ref: 61b4a559d6ca2a8b8a33bb61f71dda4aa30aabad
+  readmore: ^2.1.0
+  # 底部弹窗选择器，类似ios的效果
+  flutter_picker: ^2.0.2
+  #  flutter_quill: ^3.0.3
+  flutter_quill:
+    git:
+      url: https://gitee.com/fanbook/flutter-quill.git
+      ref: 2.1.0+2
+
+  # 矢量动画库：
+  # pub.dev: https://pub.dev/packages/rive
+  # OfficialWeb: https://rive.app/
+  rive: ^0.8.1
+  draggable_float_widget: ^0.0.2
+  # 直播模块插件，原生相关以及资料图片仍在主工程
+  fb_live_flutter:
+    path: ../plugins/fb_live_flutter
+  # 图片轮播
+  card_swiper: 2.0.3
+  # Basic lock mechanism to prevent concurrent access to asynchronous code.
+  # https://pub.dev/packages/synchronized
+  synchronized: '>=3.0.0 <5.0.0'
+  markdown_quill: ^0.0.1+1
+
+dependency_overrides:
+  # dynamic_view 的 fanbook 分支依赖了 2.0.20，本来不需要这个分支，这个逻辑能放到 fanbook 里面配置的
+  # 但是，fanbook 的项目不支持 null-style，跑不起来 build_runner
+  flutter_quill:
+    git:
+      url: https://gitee.com/fanbook/flutter-quill.git
+      ref: 2.1.0.1
+
+  file: ^6.0.0
+  photo_view:
+    git:
+      url: https://github.com/jing-pei/photo_view.git
+      ref: 2.0.0
+  # quill 使用了此插件，项目中没有用到，强制更新到新版本，否则编译不通过
+  flutter_colorpicker: ^1.0.3
+  sqflite:
+    git:
+      url: https://github.com/yzhtracy/sqflite
+      path: sqflite
+      ref: aed3b06a42ba5e5c19ec7463d903790bee82ef64
+  #  url_launcher: ^6.0.10
+  uuid: ^3.0.4
+  # quill 和 fanbook 的依赖冲突，强制使用 fanbook 配置
+  video_player:
+    git:
+      url: https://github.com/BuildAndRelease/plugins.git
+      path: packages/video_player/video_player/
+      ref: 2.2.10+8
+  video_player_web:
+    git:
+      url: https://gitee.com/fanbook/video_player_web
+      ref: 78d6a25e8ee27616a78b91ac6dd1e6a1af06e7ec
+  flutter_inappwebview:
+    git:
+      url: https://gitee.com/fanbook/flutter_inappwebview.git
+      ref: 5.3.2-hotfixes+1
+  image_picker:
+    git:
+      url: https://github.com/BuildAndRelease/plugins.git
+      path: packages/image_picker/image_picker/
+      ref: 19a78f452a96f92904ce3318430d6c232f62aa68
+  # 解决其他插件内依赖更高版本，导致编译失败
+  flutter_screenutil: 5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.7
+  flutter_launcher_icons: ^0.9.2
+  hive_generator: ^1.1.1
+  flutter_lints: ^1.0.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app-icon/icon.jpeg"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/app-icon/
+    - assets/svg/
+    - assets/gif/
+    - assets/emojis/all_emoji/
+    - assets/emojis/
+    - assets/sound/
+    - assets/launch_screen_logo.svg
+    - assets/splash_screen_branding.svg
+    - assets/images/
+    - assets/images/2.0x/
+    - assets/images/3.0x/
+    - assets/datas/
+    - assets/icon-font/buff/
+    - assets/mini-program/
+    - assets/html-page/
+    - assets/live/CreateRoom/photo.png
+    - assets/live/CreateRoom/online.png
+    - assets/live/CreateRoom/live_icon.png
+    - assets/live/CreateRoom/close_black_btn.png
+    - assets/live/CreateRoom/placeholder.png
+    - assets/live/CreateRoom/arrow_down.png
+    - assets/live/CreateRoom/delete.png
+    - assets/live/CreateRoom/channel_lock.png
+    - assets/live/LiveRoom/close_btn.png
+    - assets/live/LiveRoom/fristpeople.png
+    - assets/live/LiveRoom/live_add.png
+    - assets/live/LiveRoom/live_frist.png
+    - assets/live/LiveRoom/live_second.png
+    - assets/live/LiveRoom/live_share.png
+    - assets/live/LiveRoom/live_third.png
+    - assets/live/LiveRoom/secondpeople.png
+    - assets/live/LiveRoom/thirdpeople.png
+    - assets/live/LiveRoom/userlogo.png
+    - assets/live/LiveRoom/gift_btn.png
+    - assets/live/LiveRoom/upclick.png
+    - assets/live/LiveRoom/gift_anchor.png
+    - assets/live/LiveRoom/close_anchor.png
+    - assets/live/LiveRoom/chat_anchor.png
+    - assets/live/LiveRoom/keyboard_emoji.png
+    - assets/live/LiveRoom/keyboard_sendchat.png
+    - assets/live/LiveRoom/audiences_sendchat.png
+    - assets/live/LiveRoom/dark_sendbtn.png
+    - assets/live/LiveRoom/gift_balloon.png
+    - assets/live/LiveRoom/gift_big_cake.png
+    - assets/live/LiveRoom/gift_bouquet.png
+    - assets/live/LiveRoom/gift_box.png
+    - assets/live/LiveRoom/gift_cake.png
+    - assets/live/LiveRoom/gift_dog.png
+    - assets/live/LiveRoom/gift_flower.png
+    - assets/live/LiveRoom/gift_ring.png
+    - assets/live/LiveRoom/money.png
+    - assets/live/LiveRoom/big_heart.png
+    - assets/live/LiveRoom/data_null.png
+    - assets/live/LiveRoom/flip_camera.png
+    - assets/live/LiveRoom/live_bgImage.png
+    - assets/live/LiveRoom/gift_click_num.png
+    - assets/live/LiveRoom/fanbooklogo.png
+    - assets/live/LiveRoom/choose_camera.png
+    - assets/live/LiveRoom/cooffe.png
+    - assets/live/LiveRoom/up_lick.png
+    - assets/live/LiveRoom/applause.png
+    - assets/live/LiveRoom/first_heart.png
+    - assets/live/LiveRoom/like.png
+    - assets/live/LiveRoom/love.png
+    - assets/live/LiveRoom/ok.png
+    - assets/live/LiveRoom/plus_one.png
+    - assets/live/LiveRoom/close.png
+    - assets/live/LiveRoom/arrow_right.png
+    - assets/live/preview/
+    - assets/live/main/
+    - assets/rive/
+    - assets/community/
+    - assets/images/2.0x/share_default.png
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: iconfont
+      fonts:
+        - asset: assets/fonts/iconfont.ttf
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+

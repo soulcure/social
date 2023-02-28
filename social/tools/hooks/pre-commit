@@ -1,0 +1,14 @@
+changedDartFiles=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.dart$')
+
+if [ -n "$changedDartFiles" ]; then
+    fvm flutter format --set-exit-if-changed $changedDartFiles
+
+    if [ ! $? -eq '0' ]; then
+        echo "ABORT. Some files are not formatted correctly, we have formatted those files for you, but you need to re-run the commit process"
+        exit 1
+    fi
+fi
+
+
+cd social
+fvm flutter analyze

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>表格icon</title>
+    <defs>
+        <linearGradient x1="93.8925%" y1="34.3044118%" x2="70.8733333%" y2="34.3044118%"
+            id="linearGradient-1">
+            <stop stop-color="#008F4B" offset="0%"></stop>
+            <stop stop-color="#00833C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.4132433%" y1="3.66666665%" x2="22.9359149%" y2="100.666666%"
+            id="linearGradient-2">
+            <stop stop-color="#00D689" offset="0%"></stop>
+            <stop stop-color="#00AA5B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="文件收发/服务器文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表格icon">
+            <rect id="bg" fill-opacity="0" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="48"
+                height="48"></rect>
+            <g id="编组-6" transform="translate(5.000000, 4.000000)">
+                <path
+                    d="M9.25,10.2042553 L34.4772727,10.2042553 C35.8705365,10.2042553 37,11.3473581 37,12.7574468 L37,36.587234 C37,37.9973228 35.8705365,39.1404255 34.4772727,39.1404255 L9.25,39.1404255 C7.8567362,39.1404255 6.72727273,37.9973228 6.72727273,36.587234 L6.72727273,12.7574468 C6.72727273,11.3473581 7.8567362,10.2042553 9.25,10.2042553 Z"
+                    id="蒙版备份" fill="url(#linearGradient-1)"></path>
+                <g id="蒙版">
+                    <path
+                        d="M29.4318182,0.842553191 C30.825082,0.842553191 31.9545455,1.98565596 31.9545455,3.39574468 L31.9545455,36.4255319 C31.9545455,36.4765957 31.9545455,36.5361702 31.9545455,36.587234 C31.9545455,36.6382979 31.9545455,36.6978723 31.9545455,36.7489362 L31.9545455,39.1404255 L3.36363636,39.1404255 C1.97037256,39.1404255 0.840909091,37.9973228 0.840909091,36.587234 L0.840909091,3.39574468 C0.840909091,1.98565596 1.97037256,0.842553191 3.36363636,0.842553191 L29.4318182,0.842553191 Z M34.4772727,39.1404257 L32.375,39.1404257 L32.375,38 C32.8427234,38.7125897 33.6319894,39.1407449 34.4772727,39.1404257 L34.4772727,39.1404257 Z"
+                        id="path-3" fill="url(#linearGradient-2)"></path>
+                    <image id="位图" x="0" y="0" width="35.3181818" height="40"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAvCAYAAACVDljoAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAALwAAAAAc+ip7AAAAxklEQVRYCe3ZQQrCMBBGYSMFvYbg/U/kQVwIcdw2BN6/sOniFbro9EGGb5vWe39eTva01l77lVoteq/hZ/9j4fdWi76H82vRbRguHMz2uS7cKTraRSMuECsKkKJE0YgLxIoCpChRNOICsaIAKUoUjbhArChAihJFIy4QKwqQokTRiAvEigKkKFE04gKxogApShSNuECsKECKEkUjLhArCpCiRNGIC8SKAqRZUndi/TH8nN2UDeGBg9rp9lu23tPd0x7I8OejvjEgH7g//9n/AAAAAElFTkSuQmCC"></image>
+                </g>
+                <g id="Rectangle-19-Copy-5备份-2" transform="translate(17.659091, 26.800000)">
+                    <g id="image-link">
+                        <image id="image" x="0" y="0" width="12.6136364" height="7.65957447"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAD6ADAAQAAAABAAAACQAAAACIdi6pAAAAWklEQVQoFWNkQAAWIJMRwcXL+g+U/QNTDNKoAsSseLUgJH8DmXdAmkAAZAhIIxuIQyRgZCJSIVZlFGmGORsUACB/EAtAav/DAgykCWQQMh8khguAQxuXJO3FAacXChXfz7/5AAAAAElFTkSuQmCC"></image>
+                    </g>
+                    <rect id="path-5" fill="#A3F0D4" fill-rule="nonzero" x="0.840909091"
+                        y="0.85106383" width="9.46022727" height="3.82978723"></rect>
+                </g>
+                <g id="Rectangle-19-Copy-4备份-3" transform="translate(5.676136, 26.800000)">
+                    <g id="image-link">
+                        <image id="image" x="0" y="0" width="12.6136364" height="7.65957447"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAD6ADAAQAAAABAAAACQAAAACIdi6pAAAAWklEQVQoFWNkQAAWIJMRwcXL+g+U/QNTDNKoAsSseLUgJH8DmXdAmkAAZAhIIxuIQyRgZCJSIVZlFGmGORsUACB/EAtAav/DAgykCWQQMh8khguAQxuXJO3FAacXChXfz7/5AAAAAElFTkSuQmCC"></image>
+                    </g>
+                    <rect id="path-7" fill="#A3F0D4" fill-rule="nonzero" x="0.840909091"
+                        y="0.85106383" width="9.46022727" height="3.82978723"></rect>
+                </g>
+                <g id="Rectangle-19-Copy-5备份" transform="translate(17.659091, 20.417021)">
+                    <g id="image-link">
+                        <image id="image" x="0" y="0" width="12.6136364" height="7.65957447"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAD6ADAAQAAAABAAAACQAAAACIdi6pAAAAWklEQVQoFWNkQAAWIJMRwcXL+g+U/QNTDNKoAsSseLUgJH8DmXdAmkAAZAhIIxuIQyRgZCJSIVZlFGmGORsUACB/EAtAav/DAgykCWQQMh8khguAQxuXJO3FAacXChXfz7/5AAAAAElFTkSuQmCC"></image>
+                    </g>
+                    <rect id="path-9" fill="#E0FBF1" fill-rule="nonzero" x="0.840909091"
+                        y="0.85106383" width="9.46022727" height="3.82978723"></rect>
+                </g>
+                <g id="Rectangle-19-Copy-4" transform="translate(5.676136, 20.417021)">
+                    <g id="image-link">
+                        <image id="image" x="0" y="0" width="12.6136364" height="7.65957447"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAD6ADAAQAAAABAAAACQAAAACIdi6pAAAAWklEQVQoFWNkQAAWIJMRwcXL+g+U/QNTDNKoAsSseLUgJH8DmXdAmkAAZAhIIxuIQyRgZCJSIVZlFGmGORsUACB/EAtAav/DAgykCWQQMh8khguAQxuXJO3FAacXChXfz7/5AAAAAElFTkSuQmCC"></image>
+                    </g>
+                    <rect id="path-11" fill="#E0FBF1" fill-rule="nonzero" x="0.840909091"
+                        y="0.85106383" width="9.46022727" height="3.82978723"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

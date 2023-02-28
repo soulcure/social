@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="700px" viewBox="0 0 750 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>背景图</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#198CFE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录/新手引导" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="背景图">
+            <rect id="矩形" fill="url(#linearGradient-1)" opacity="0.1" x="0" y="0" width="750" height="648"></rect>
+            <polygon id="矩形" fill="url(#linearGradient-2)" opacity="0.800000012" transform="translate(240.000000, 460.000000) scale(-1, -1) translate(-240.000000, -460.000000) " points="0 220 480 220 480 700"></polygon>
+            <polygon id="矩形" fill="url(#linearGradient-3)" opacity="0.800000012" points="270 0 750 0 750 480"></polygon>
+        </g>
+    </g>
+</svg>

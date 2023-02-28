@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="referrer" content="no-referrer">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description"
+          content="是时候告别传统社区了！Fanbook是新型的创作者协作工具，更是大家的私域阵地，多元化的属性任你定义！更丰富、能协同，可沉淀，感受虚拟世界的无限乐趣，尽在 Fanbook！">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="social">
+    <link rel="apple-touch-icon" href="icons/Icon-App-76x76@2x.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="icons/Icon-App-76x76@2x.png" />
+    <base href="/circle/">
+    <title>Fanbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .divider {
+      margin: 30px 0 42px 0;
+    }
+
+    .divider-line {
+      width: 24px;
+      height: 1px;
+    }
+
+    .loading {
+      animation: breath 1s infinite linear;
+      animation-direction: alternate;
+    }
+
+    p,
+    span {
+      overflow: hidden !important;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @keyframes breath {
+      from {
+        background: #8F959E;
+        opacity: 0.05;
+      }
+
+      to {
+        background: #8F959E;
+        opacity: 0.2;
+      }
+    }
+    #loading {
+    padding: 0 16px;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+  </style>
+</head>
+
+<body>
+<div id="loading" class="col">
+    <!-- 顶部那块 -->
+    <div class="row" style="align-items:center;padding: 20px 0 18px 0;">
+        <div class="loading" style="border-radius: 100%;width: 32px;height: 32px;"></div>
+        <div class="loading" style="width: 100px;
+      height: 16px;
+margin-left: 8px;
+      border-radius: 4px;
+      "></div>
+    </div>
+
+    <!-- 中间那块 -->
+    <div class="loading" style="width: 100%;
+    flex: 1;
+    height: 809px;
+    border-radius: 4px;"></div>
+
+    <!-- 分割线 -->
+    <div class="divider row" style="align-items: center;justify-content: center;">
+        <div class="divider-line loading"></div>
+        <div class="loading" style="
+  width: 4px;
+height: 4px;
+border-radius: 100%;
+margin: 0 8px;
+"></div>
+        <div class="divider-line loading"></div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="col" style="
+    background: #F5F5F8;
+    border-radius: 4px;
+    padding: 16px 12px 0px 12px;
+    margin-bottom: 35px">
+        <div class="row" style="
+    align-items: center;margin-bottom: 16px;">
+            <div class="loading" style="border-radius: 100%;width: 44px;height: 44px;"></div>
+            <div class="loading" style="width: 100px;
+height: 16px;
+margin-left: 8px;
+border-radius: 4px;
+"></div>
+        </div>
+        <div style="
+height: 1px;
+background: #919499;
+opacity: 0.2;"></div>
+
+        <div class="loading" style="
+margin: 8px 0;
+width: 169px;
+height: 16px;
+border-radius: 4px;"></div>
+    </div>
+</div>
+
+
+
+<!-- This script installs service_worker.js to provide PWA functionality to
+ application. For more information, see:
+ https://developers.google.com/web/fundamentals/primers/service-workers -->
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3222340192');
+      });
+    }
+
+    // 使 flutter 的第一个路由不保存在路由历史中
+    var pushState = history.pushState;
+    history.pushState = function () {
+      history.replaceState.apply(history, arguments);
+      history.pushState = pushState;
+    };
+  </script>
+
+<script src="js/hls.js" type="application/javascript"></script>
+<script src="js/cropper.min.js"></script>
+<script src="js/pako.min.js"></script>
+<script src="js/index.js" type="application/javascript"></script>
+<script src='js/ZegoExpressWebRTC.js'></script>
+<script src='js/js.cookie.min.js'></script>
+<script src="main.dart.js" type="application/javascript"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.9.0/vconsole.min.js"></script>-->
+<!--<script>-->
+<!--  var vConsole = new window.VConsole();-->
+<!--</script>-->
+</body>
+
+</html>

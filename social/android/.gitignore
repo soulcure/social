@@ -1,0 +1,15 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+
+#unityExport
+unityExport/build/
+unityExport/symbols/
+unityExport/src/main/assets/
+unityExport/src/main/Il2CppOutputProject/
+unityExport/src/main/jniLibs/
+unityExport/src/main/jniStaticLibs/

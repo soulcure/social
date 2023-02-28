@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="36px" viewBox="0 0 42 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>腾讯文档-斜向单logo</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="41.3346418" height="36"></rect>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo/color备份" transform="translate(-0.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="矩形"></g>
+            <path d="M33.4208329,0 L6.89273754,0 C6.52675917,0 6.2134569,0.260376232 6.14993572,0.617839014 L0.0116211711,35.1226379 C-0.0696308472,35.5804291 0.285502445,36 0.754422991,36 L35.5430255,36 C35.9090039,36 36.222134,35.7394531 36.2858273,35.3823316 L41.3346418,7.00081048 L33.4208329,0 Z" id="Fill-129" fill="#1E6FFF" mask="url(#mask-2)"></path>
+            <path d="M33.1282022,7.02857143 L41.3346418,7.02857143 L33.4726312,0 L32.3904333,6.14773023 C32.3093711,6.60733679 32.6623509,7.02857143 33.1282022,7.02857143" id="Fill-130" fill="#00DCFF" mask="url(#mask-2)"></path>
+            <polygon id="Fill-131" fill="#FFFFFF" mask="url(#mask-2)" points="21.4799816 1.37142857 19.9944214 9.76504089 5.51128557 9.78985786 11.8037695 16.5537655 18.7876082 16.5537655 15.3282495 36 24.2345477 36 27.6978688 16.5537655 38.2135956 16.5537655 38.578999 16.5457214"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+command_exists() {
+    command -v "$@" > /dev/null 2>&1
+}
+
+if ! command_exists npx; then
+   echo "ERROR. Please install node.js or upgrade to LTS version."
+   exit 1
+fi
+
+if ! test -x ./node_modules/.bin/commitlint; then
+   npm i --registry=https://registry.npmmirror.com
+fi
+
+if ! test -d ./node_modules/@commitlint/config-angular; then
+  npm i --registry=https://registry.npmmirror.com
+fi
+
+cat $1 | npx commitlint -V

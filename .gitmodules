@@ -1,0 +1,3 @@
+[submodule "plugins/dynamic_widget"]
+	path = plugins/dynamic_widget
+	url = https://gitee.com/fanbook/dynamic_widget.git
